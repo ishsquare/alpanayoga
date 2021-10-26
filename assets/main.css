@@ -1,0 +1,74 @@
+/* shared */
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.button {
+    /* border-radius: 100px 100px 100px 100px; */
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.button:hover {
+    background-color: #0d1f16 !important;
+    border-color: #0d1f16 !important;
+}
+
+.section {
+    padding: 8rem 0rem 7rem;
+}
+
+/* face section */
+
+.face .name {
+    font-size: 4em;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.face .yogalogo {
+    position: relative;
+    text-align: right;
+}
+
+.face .logo {
+    position: relative;
+    max-width: 80%;
+    margin: 1.5rem auto -10rem;
+}
+
+/* imgFeed section */
+
+.imgfeed {
+    background-color: rgb(233, 233, 233);
+}
+
+.imgfeed h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 250px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
