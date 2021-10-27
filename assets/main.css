@@ -112,13 +112,6 @@ body {
     padding-top: 36px;
 }
 
-.social a {
-    font-size: 3em;
-    color: #222;
-    margin-right: 15px;
-}
-
-
 /* media queries */
 
 @media only screen and (min-width: 450px) {
@@ -139,6 +132,7 @@ body {
 
     .social {
         text-align: center;
+        padding-top: 0px;
     }
 }
 
