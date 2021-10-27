@@ -19,26 +19,41 @@ body {
 }
 
 .section {
-    padding: 8rem 0rem 7rem;
+    padding: 6rem 0rem;
+}
+
+.section h2 {
+    font-size: 2em;
+    font-weight: 400;
 }
 
 /* face section */
 
 .face .name {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 600;
     margin: 10px;
+    text-align: center;
 }
 
 .face .yogalogo {
     position: relative;
-    text-align: right;
+    text-align: center;
+}
+
+.face .mobile {
+    float: unset !important;
+    width: 100% !important;
 }
 
 .face .logo {
     position: relative;
-    max-width: 80%;
-    margin: 1.5rem auto -10rem;
+    max-width: 300px;
+    margin: 1.5rem auto -9rem;
+}
+
+.hider {
+    display: none;
 }
 
 /* imgFeed section */
@@ -47,15 +62,10 @@ body {
     background-color: rgb(233, 233, 233);
 }
 
-.imgfeed h2 {
-    font-size: 2.5em;
-    font-weight: 400;
-}
-
 .grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 250px;
 }
 
@@ -71,4 +81,44 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 600px) {
+    .face .name {
+        font-size: 3.3em;
+    }
+
+    .section h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .face .name {
+        text-align: left;
+    }
+
+    .face .mobile {
+        float: left !important;
+        width: 48% !important;
+    }
+
+    .hider {
+        display: inline-block;
+    }
+
+    .face .logo {
+        max-width: 400px;
+        margin: 1.5rem auto -9rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .face .name {
+        font-size: 3.6em;
+    }
 }
